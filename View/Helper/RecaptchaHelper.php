@@ -154,8 +154,7 @@ class RecaptchaHelper extends AppHelper {
 		$this->Form->unlockField('g-recaptcha-response');
 
 		$apiUrl = $this->apiUrl . '?' . http_build_query($query);
-		$this->Html->script($apiUrl, array('block' => 'script', 'async' => true, 'defer' => true, 'once' => true));
-
+		$output .= $this->Html->script($apiUrl, array('async' => true, 'defer' => true, 'once' => true));
 		return $output;
 	}
 
