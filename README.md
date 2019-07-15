@@ -9,6 +9,8 @@ The following comes from the original readme:
 
 ## Usage ##
 
+IMPORTANT: The plugin's name is Recaptcha, not CakeRecaptcha.
+
 To use the recaptcha plugin its required to include the following two lines in your `/app/Config/bootstrap.php` file.
 
 	Configure::write('Recaptcha.publicKey', 'your-public-api-key');
